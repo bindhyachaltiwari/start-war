@@ -1,0 +1,460 @@
+@khaki:#965508;
+
+.alignGrid{
+    margin-top:40px;
+}
+
+.panel{
+	width: 450px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom : 70px;
+}
+
+.planet .planetName{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.planet.small{
+    font-size: 15px;
+}
+
+.planet.large{
+    font-size: 25px;
+}
+
+.planet.normal{
+    font-size: 35px;
+}
+
+.onTop{
+    z-index: 9999;
+}
+
+.centerScreen{
+    position:fixed;
+    top: 50%;
+    left: 50%;
+    width:35em;
+    height:24em;
+    margin-top: -9em; /*set to a negative number 1/2 of your height*/
+    margin-left: -15em; /*set to a negative number 1/2 of your width*/
+    border: 1px solid #ccc;
+    background-color: #f3f3f3;
+}
+
+.planet:hover{
+    cursor: pointer;
+}
+
+.planet:before {
+    content: "";
+    position: absolute;
+    background: radial-gradient(circle at 50% 120%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 70%);
+    border-radius: 50%;
+    bottom: 2.5%;
+    left: 5%;
+    opacity: 0.6;
+    height: 100%;
+    width: 90%;
+    filter: blur(5px);
+    z-index: 2;
+  }
+
+.planet:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 5%;
+    left: 10%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8) 14%, rgba(255, 255, 255, 0) 24%);
+    transform: translateX(-80px) translateY(-90px) skewX(-20deg);
+    filter: blur(10px);
+  }
+
+.planet{
+    color : khaki;
+    border-radius: 100px;
+    text-align: center;
+    background-image: url(../assets/images/planet.jpg);    
+    width: 200px;
+    float: left;
+    margin-left: 50px;
+    margin-bottom: 90px;
+    height: 200px;
+}
+
+.planetDetail{
+    opacity: 0.9;
+    background: khaki;
+}
+
+.planetDetail .container{
+    text-align: center;
+    border-radius: 20px;
+    background: #311900;
+    color:yellow;
+}
+
+.planetDetail .container .list-group-item{
+    opacity: 1;
+    background: #6d3701;
+}
+
+.planet .shadow {
+    position: absolute;
+    width: 90%;
+    height: 70%;
+    background: radial-gradient(circle at 35% 36%, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1) 26%, rgba(0, 0, 0, 0) 47%);    
+    }
+
+.planet div{
+    padding-top : 67px;
+}
+
+
+.css-qyadkl, [data-css-qyadkl] {
+    margin-left: 645px !important;
+    margin-top: 85px !important;
+}
+.panel-body{
+	color:#656931 !important;
+}
+.form-inline{
+	margin-bottom:50px;
+}
+.panel-heading{
+	 background:#656931 !important;
+    vertical-align: middle;
+    font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+    text-align: center;
+	padding:5px;
+	
+}
+body {
+    margin: 0;
+    position: relative;    
+    min-height: 100vh;
+    background: khaki;
+}
+#container {
+    padding-bottom: 100px;
+}
+img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top
+}
+.loader {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: white;
+    z-index: 9999;
+}
+.error {
+    margin: 50px
+}
+.alert {
+    margin: 50px
+}
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+section.topbar {
+    background-color: @khaki;
+    overflow: hidden;
+}
+.nav-left {
+    float: left;
+}
+.topnav img {
+    width: 137px;
+    height: 102px;
+    opacity: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 50%
+}
+.nav-right {
+    float: right;
+}
+footer {
+    border-top: 1px solid black;
+    color: #999;
+    position: absolute;
+    width: 100%;
+    clear: both;
+    bottom: 0;
+    margin-top: 50px;
+    background:@khaki;
+    padding: 5px 0 5px 0;
+}
+footer a {
+    color: #999;
+}
+footer a:hover {
+    color: #efefef;
+}
+header {
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    font-size: 22px;
+    text-align: center;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    &.insetshadow {
+        color: #31798f;
+        background-color: #2d2d2d;
+        letter-spacing: .1em;
+        text-shadow: -1px -1px 1px #d5d5d5, 2px 2px 1px #363636;
+    }
+    &.retroshadow {
+        color: #d5d5d5;
+        background-color:@khaki;
+        letter-spacing: .05em;
+        font-weight: bolder;
+    }
+}
+/* Rounded avatars */
+.overlay .btn-default{
+	background-color:@khaki;
+	color:#d5d5d5
+}
+
+.btn-default{
+    background-color: #965508;
+    border-color: #965508;
+    color:white;
+}
+
+.btn-default:hover{
+    background-color: #5e3405;
+    border-color: #5e3405;
+    color:white;
+}
+
+.avatar {
+    float: left;
+    margin-top: 1em;
+    margin-right: 1em;
+    position: relative;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    -webkit-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, .2);
+    -moz-box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, .2);
+    box-shadow: 0 0 0 3px #fff, 0 0 0 4px #999, 0 2px 5px 4px rgba(0, 0, 0, .2);
+}
+.techie-name {
+    color: #777;
+}
+ul.topnav li {
+    float: left;    
+    border-left: solid;
+    border-color: #9c7732;
+    background-color: #734106;
+    color: #e4d81c;
+}
+@gray: #333;
+@gray-light: #aaa;
+@gray-lighter: #eee;
+@space: 40px;
+@green: #42ca98;
+@blue-dark: darken(@green,
+5%);
+.btn-info {
+    @green: #42ca98;
+    @blue-dark: darken(@green, 5%);
+    background-color: @khaki;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: visible;
+    opacity: 1;
+}
+.popup {
+    margin: 70px 450px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 45%;
+    position: relative;
+    transition: all 5s ease-in-out;
+}
+.glypho {
+    position: absolute;
+  	top: 59px;
+    margin-left: -17px;
+    cursor: pointer;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #333;
+    font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.popup .close:hover {
+    color: #06D85F;
+}
+.popup .content {
+    width: 400px;
+    overflow: auto;
+}
+.row-block {
+    border-bottom: 1px ridge lightgray;
+    padding: 10px;
+}
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+    .popup {
+        width: 70%;
+    }
+}
+ul.topnav li a {
+    display: block;    
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #e4d81c;
+}
+#searchinput {
+    width: 200px;
+}
+#searchclear {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    bottom: 0;
+    height: 14px;
+    margin: auto;
+    font-size: 14px;
+    cursor: pointer;
+    color: #ccc;
+}
+.component-block {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+ul.topnav li a:hover:not(.active) {
+    background-color: #5e3200;
+    color: #e4d81c;
+    cursor: pointer;
+}
+@gold: rgb(222,
+217,
+26);
+ul.topnav li a.active {
+    background-color: @gold;
+    color: @khaki
+}
+ul.topnav li.right {
+    float: right;
+}
+.headermessage {
+    margin: 19px;
+    color: black;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+.image-block {
+    border: 3px solid white;
+    padding: 0px;
+    margin: 30px;
+    height: 200px;
+    text-align: center;
+    vertical-align: bottom;
+    float: left
+}
+.techie-img {
+    width: 200px;
+    height: 200px;
+}
+.techie-img > p {
+    width: 100%;
+    height: 100%;
+    font-weight: normal;
+    font-size: 19px;
+    padding-top: 150px;
+    background-color: rgba(3, 3, 3, 0.0);
+    color: rgba(6, 6, 6, 0.0);
+}
+.image-block:hover > p {
+    background-color: @khaki;
+    color: white;
+}
+@media screen and (max-width: 600px) {
+    ul.topnav li.right,
+    ul.topnav li {
+        float: none;
+    }
+    footer {
+        position: relative;
+        background: none;
+    }
+}
+
+.overlay{
+    opacity:0.8;
+    background-color:#ccc;
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+
+#loader {
+    opacity:0.9;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../assets/images/loadingplanet.gif) 50% 50% no-repeat rgb(249,249,249);
+}
+.margin-left{
+    margin-left: 70px;
+}
+
+.loginBox {
+    margin: 150px 400px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 45%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    background: goldenrod;
+    text-align:center;
+}
